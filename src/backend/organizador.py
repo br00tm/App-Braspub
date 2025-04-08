@@ -320,8 +320,16 @@ def main():
             logger.error(f"Erro ao processar planilha: {str(e)}", exc_info=True)
             resultado = {'status': 'erro', 'mensagem': str(e)}
     
-    # Retornar resultado como JSON
-    return json.dumps(resultado, default=json_serial, ensure_ascii=False)
+    # Verificar se temos um resultado válido
+    if resultado is None:
+        resultado = {'status': 'erro', 'mensagem': 'Nenhum processamento foi realizado'}
+    
+    # Para uso em linha de comando, retornar como string JSON
+    if __name__ == "__main__":
+        return json.dumps(resultado, default=json_serial, ensure_ascii=False)
+    else:
+        # Para uso como módulo, retornar o dicionário diretamente
+        return resultado
 
 if __name__ == "__main__":
     # Chamar a função principal e imprimir o resultado

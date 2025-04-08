@@ -6,12 +6,13 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-bootstrap": "^2.9.0",
-    "bootstrap": "^5.3.0",
     "axios": "^1.4.0",
-    "electron-is-dev": "^2.0.0"
+    "bootstrap": "^5.3.0",
+    "electron-is-dev": "^2.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
+    "react-dom": "^18.2.0",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -76,4 +77,4 @@
     "react-scripts": "5.0.1",
     "wait-on": "^7.0.1"
   }
-} 
+}

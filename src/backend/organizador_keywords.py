@@ -383,32 +383,54 @@ def processar_planilha_keywords(caminho_arquivo):
         for idx, row in df.head().iterrows():
             logger.info(f"Linha {idx}: {dict(row)}")
         
-        # Mapear colunas originais para novos nomes simplificados conforme imagem
-        # Incluindo possíveis variações de nomes de colunas
+        # Verificar se o DataFrame contém as colunas necessárias
+        # Mapeamento de nomes de colunas comuns
         mapeamento_colunas = {
+            # Diversos nomes para PALAVRAS-CHAVE
             'Palavra-chave': 'PALAVRAS-CHAVE',
             'Palavra chave': 'PALAVRAS-CHAVE',
+            'Palavra_chave': 'PALAVRAS-CHAVE',
+            'Palavras-chave': 'PALAVRAS-CHAVE',
+            'Palavras chave': 'PALAVRAS-CHAVE',
+            'Palavras_chave': 'PALAVRAS-CHAVE',
+            'Keywords': 'PALAVRAS-CHAVE',
             'Keyword': 'PALAVRAS-CHAVE',
             'PALAVRAS-CHAVE': 'PALAVRAS-CHAVE',
             'Assunto': 'PALAVRAS-CHAVE',
             'Cliente': 'PALAVRAS-CHAVE',
+            # Diversos nomes para DATA DE CADASTRO
             'Data de inclusão': 'DATA DE CADASTRO',
             'Data': 'DATA DE CADASTRO',
-            'DATA DE CADASTRO': 'DATA DE CADASTRO',
+            'DATA DE INCLUSÃO': 'DATA DE CADASTRO',
+            'Data de cadastro': 'DATA DE CADASTRO',
+            # Diversos nomes para TÍTULO DA MATÉRIA
             'Título': 'TÍTULO DA MATÉRIA',
+            'Titulo': 'TÍTULO DA MATÉRIA',
+            'Title': 'TÍTULO DA MATÉRIA',
+            'Matéria': 'TÍTULO DA MATÉRIA',
+            'Materia': 'TÍTULO DA MATÉRIA',
             'TÍTULO DA MATÉRIA': 'TÍTULO DA MATÉRIA',
-            'Veículo': 'VEÍCULO',
-            'Tipo da mídia': 'TIPO DE MÍDIA',
+            # Diversos nomes para TIPO DE MÍDIA
+            'Tipo de mídia': 'TIPO DE MÍDIA',
+            'Tipo de midia': 'TIPO DE MÍDIA',
+            'Tipo': 'TIPO DE MÍDIA',
+            'Mídia': 'TIPO DE MÍDIA',
+            'Midia': 'TIPO DE MÍDIA',
             'TIPO DE MÍDIA': 'TIPO DE MÍDIA',
             'Portal': 'TIPO DE MÍDIA',
             'Online': 'TIPO DE MÍDIA',
+            # Diversos nomes para LINK DA MATÉRIA CADASTRADA
+            'Link da matéria': 'LINK DA MATÉRIA CADASTRADA',
             'Link da matéria cadastrada': 'LINK DA MATÉRIA CADASTRADA',
             'LINK DA MATÉRIA CADASTRADA': 'LINK DA MATÉRIA CADASTRADA',
-            'Link original': 'LINK ORIGINAL',
-            'LINK ORIGINAL': 'LINK ORIGINAL',
             'Link': 'LINK DA MATÉRIA CADASTRADA',
             'URL': 'LINK DA MATÉRIA CADASTRADA',
             'Endereço': 'LINK DA MATÉRIA CADASTRADA',
+            'Endereco': 'LINK DA MATÉRIA CADASTRADA',
+            # Outros campos importantes
+            'Veículo': 'VEÍCULO',
+            'Link original': 'LINK ORIGINAL',
+            'LINK ORIGINAL': 'LINK ORIGINAL',
             'Link web - Imagem': 'LINK_WEB_IMAGEM',
             'Link web - Texto': 'LINK_WEB_TEXTO',
             'Link Materia': 'LINK_WEB_TEXTO'
@@ -705,25 +727,32 @@ def processar_planilha_keywords(caminho_arquivo):
             
             # Extrair data de cadastro e título da matéria
             data_cadastro = df_palavra['DATA DE CADASTRO'].iloc[0] if len(df_palavra) > 0 and 'DATA DE CADASTRO' in df_palavra.columns else ''
+            if not data_cadastro and len(df_palavra) > 0 and 'DATA DE INCLUSÃO' in df_palavra.columns:
+                data_cadastro = df_palavra['DATA DE INCLUSÃO'].iloc[0]
             titulo_materia = df_palavra['TÍTULO DA MATÉRIA'].iloc[0] if len(df_palavra) > 0 and 'TÍTULO DA MATÉRIA' in df_palavra.columns and str(df_palavra['TÍTULO DA MATÉRIA'].iloc[0]).strip() != '' else 'Matéria Não Cadastrada'
             
             # Para cada tipo de mídia, verificar se existe registro ou criar um vazio
             for tipo_midia in tipos_midia_padrao:
-                # Se o tipo de mídia atual é o mesmo que detectamos no link web imagem
-                # usar o link web imagem diretamente para Impresso, TV e Rádio
-                if tipo_midia_detectado and tipo_midia == tipo_midia_detectado and link_web_imagem and tipo_midia in ['Impresso', 'TV', 'Rádio']:
+                # Primeiro verifica se temos registros existentes para este tipo de mídia
+                registros_tipo = df_palavra[df_palavra['TIPO DE MÍDIA'] == tipo_midia]
+                
+                # Determina qual link específico usar para este tipo de mídia
+                if tipo_midia == 'Impresso' and link_web_imagem:
+                    # Para Impresso, sempre usar o link web imagem se disponível
                     link_especifico = link_web_imagem
-                    logger.info(f"Usando link web imagem diretamente para {tipo_midia}: {link_especifico}")
-                # Para Portal, priorizar usar o Link web - Texto
+                    logger.info(f"Usando link web imagem para Impresso: {link_especifico}")
                 elif tipo_midia == 'Portal' and link_web_texto:
+                    # Para Portal, sempre usar o link web texto se disponível
                     link_especifico = link_web_texto
-                    logger.info(f"Usando link web texto diretamente para Portal: {link_especifico}")
+                    logger.info(f"Usando link web texto para Portal: {link_especifico}")
+                elif tipo_midia in ['TV', 'Rádio'] and link_web_imagem and tipo_midia_detectado == tipo_midia:
+                    # Para TV e Rádio, usar link web imagem apenas se o tipo detectado coincidir
+                    link_especifico = link_web_imagem
+                    logger.info(f"Usando link web imagem para {tipo_midia} (tipo detectado coincide): {link_especifico}")
                 else:
-                    # Caso contrário, obter o link específico para este tipo de mídia
+                    # Em todos os outros casos, processar o link baseado no tipo de mídia
                     link_especifico = obter_link_por_tipo_midia(link_base, tipo_midia)
                     logger.info(f"Usando link processado para {tipo_midia}: {link_especifico}")
-                
-                registros_tipo = df_palavra[df_palavra['TIPO DE MÍDIA'] == tipo_midia]
                 
                 if len(registros_tipo) > 0:
                     # Usar o primeiro registro encontrado, mas com o link específico para este tipo de mídia
@@ -733,7 +762,7 @@ def processar_planilha_keywords(caminho_arquivo):
                     # Criar um registro para este tipo de mídia
                     registro = {
                         'PALAVRAS-CHAVE': palavra,
-                        'DATA DE CADASTRO': data_cadastro,
+                        'DATA DE CADASTRO': data_cadastro or datetime.now().strftime('%Y-%m-%d'),
                         'TÍTULO DA MATÉRIA': titulo_materia,
                         'TIPO DE MÍDIA': tipo_midia,
                         'LINK DA MATÉRIA CADASTRADA': link_especifico
@@ -741,11 +770,9 @@ def processar_planilha_keywords(caminho_arquivo):
                 
                 # Adicionar o registro à lista
                 registros_palavra.append(registro)
-            
+
             # Adicionar os registros ao resultado
             resultado[palavra] = registros_palavra
-        
-        return {'status': 'sucesso', 'dados': resultado}
         
     except Exception as e:
         import traceback
@@ -821,16 +848,16 @@ def exportar_planilha_keywords(dados, caminho_saida):
                     titulo = df_palavra['TÍTULO DA MATÉRIA'].iloc[0] if 'TÍTULO DA MATÉRIA' in df_palavra.columns and len(df_palavra) > 0 and str(df_palavra['TÍTULO DA MATÉRIA'].iloc[0]).strip() != '' else 'Matéria Não Cadastrada'
                     
                     # Criar registro para este tipo de mídia
-                    registro = {
+                    registro_ordenado = {
                         'PALAVRAS-CHAVE': palavra,
-                        'DATA DE CADASTRO': data_cadastro,
+                        'DATA DE CADASTRO': data_cadastro or datetime.now().strftime('%Y-%m-%d'),
                         'TÍTULO DA MATÉRIA': titulo,
                         'TIPO DE MÍDIA': tipo,
                         'LINK DA MATÉRIA CADASTRADA': link_especifico
                     }
                 
                 # Adicionar à lista de registros ordenados
-                registros_ordenados.append(registro)
+                registros_ordenados.append(registro_ordenado)
             
             # Adicionar ao DataFrame final
             df_linhas = pd.DataFrame(registros_ordenados)

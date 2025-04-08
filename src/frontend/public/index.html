@@ -14,6 +14,21 @@
     <title>Organizador de Planilhas BrasPub</title>
     <!-- Fonte personalizada -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Preload Script para o Electron -->
+    <script>
+      // Verificar se estamos no Electron e adicionar uma API de comunicação ao window
+      if (window.process && window.process.versions && window.process.versions.electron) {
+        window.electron = window.electron || {};
+        // Se o preload já configurou isso, não substituiremos
+        if (!window.electron.ipcRenderer && window.require) {
+          try {
+            window.electron.ipcRenderer = window.require('electron').ipcRenderer;
+          } catch (e) {
+            console.error('Erro ao configurar o ipcRenderer:', e);
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <noscript>Você precisa habilitar o JavaScript para executar este aplicativo.</noscript>
