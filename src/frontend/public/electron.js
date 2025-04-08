@@ -119,6 +119,38 @@ ipcMain.handle('processar-planilha', async (event, filePath) => {
   }
 });
 
+// Processar planilha de palavras-chave
+ipcMain.handle('processar-planilha-keywords', async (event, filePath) => {
+  try {
+    // Verificar se o backend está online
+    const isOnline = await checkBackendStatus();
+    if (!isOnline) {
+      return { status: 'erro', mensagem: 'Backend não está respondendo. Verifique a conexão.' };
+    }
+
+    // Criar um objeto FormData
+    const formData = new FormData();
+    formData.append('arquivo', fs.createReadStream(filePath));
+
+    // Enviar para a API específica de palavras-chave
+    const response = await axios.post(`${API_URL}/api/processar_keywords`, formData, {
+      headers: {
+        ...formData.getHeaders()
+      },
+      maxContentLength: Infinity,
+      maxBodyLength: Infinity
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error('Erro ao processar planilha de palavras-chave:', error);
+    return { 
+      status: 'erro', 
+      mensagem: error.response ? error.response.data.mensagem : error.message 
+    };
+  }
+});
+
 // Exportar planilha organizada
 ipcMain.handle('exportar-planilha', async (event, dados) => {
   try {
@@ -162,6 +194,56 @@ ipcMain.handle('exportar-planilha', async (event, dados) => {
     };
   } catch (error) {
     console.error('Erro ao exportar planilha:', error);
+    return { 
+      status: 'erro', 
+      mensagem: error.response ? error.response.data.mensagem : error.message 
+    };
+  }
+});
+
+// Exportar planilha de palavras-chave organizada
+ipcMain.handle('exportar-planilha-keywords', async (event, dados) => {
+  try {
+    // Verificar se o backend está online
+    const isOnline = await checkBackendStatus();
+    if (!isOnline) {
+      return { status: 'erro', mensagem: 'Backend não está respondendo. Verifique a conexão.' };
+    }
+
+    // Solicitar ao usuário onde salvar o arquivo
+    const resultado = await dialog.showSaveDialog(mainWindow, {
+      title: 'Salvar planilha de palavras-chave organizada',
+      defaultPath: path.join(os.homedir(), 'Desktop', 'Palavras_Chave_Organizadas.xlsx'),
+      filters: [
+        { name: 'Arquivos Excel', extensions: ['xlsx'] }
+      ]
+    });
+    
+    if (resultado.canceled) {
+      return { status: 'cancelado' };
+    }
+    
+    const caminho_saida = resultado.filePath;
+    
+    // Solicitar a exportação usando o endpoint específico para palavras-chave
+    const response = await axios.post(
+      `${API_URL}/api/exportar_keywords`, 
+      { dados },
+      { responseType: 'arraybuffer' }
+    );
+
+    // Salvar o arquivo recebido
+    fs.writeFileSync(caminho_saida, Buffer.from(response.data));
+    
+    // Abrir o diretório do arquivo
+    shell.showItemInFolder(caminho_saida);
+    
+    return { 
+      status: 'sucesso', 
+      mensagem: `Planilha de palavras-chave exportada com sucesso para: ${caminho_saida}` 
+    };
+  } catch (error) {
+    console.error('Erro ao exportar planilha de palavras-chave:', error);
     return { 
       status: 'erro', 
       mensagem: error.response ? error.response.data.mensagem : error.message 

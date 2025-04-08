@@ -1,8 +1,13 @@
+from venv import logger
 import pandas as pd
 import os
 import json
 import sys
 from datetime import datetime, date, time
+from openpyxl import load_workbook
+from organizador_keywords import (obter_link_por_tipo_midia,
+                                extrair_keywords_da_pagina, detectar_tipo_midia)
+import argparse
 
 def json_serial(obj):
     """
@@ -15,162 +20,165 @@ def json_serial(obj):
         return obj.isoformat()
     raise TypeError(f"Tipo não serializável: {type(obj)}")
 
-def processar_planilha(caminho_arquivo):
+def processar_planilha(caminho_planilha, aba_nome=None, primeira_linha=2, limite_linhas=None):
     """
-    Processa a planilha Excel e organiza os dados por tipo de mídia.
-    Mantém apenas as colunas:
-    - Nome do Cliente (Coluna Assunto - C)
-    - Data de Inclusão (Coluna E)
-    - Título da Matéria (Coluna L)
-    - Link da Matéria Cadastrada (Coluna P)
-    - Veículo (Coluna H)
-    - Tipo de Mídia (Coluna J)
+    Processa a planilha Excel para extrair informações e complementá-las.
     
     Args:
-        caminho_arquivo: Caminho para o arquivo Excel a ser processado
+        caminho_planilha: Caminho para a planilha Excel
+        aba_nome: Nome da aba a ser processada (opcional)
+        primeira_linha: Número da primeira linha a ser processada (começando em 1)
+        limite_linhas: Número máximo de linhas a processar (opcional)
         
     Returns:
-        Um dicionário com os dados organizados por tipo de mídia
+        Dict com status e resultados da operação
     """
     try:
-        # Carregar a planilha Excel
-        df = pd.read_excel(caminho_arquivo)
+        logger.info(f"Iniciando processamento da planilha: {caminho_planilha}")
+        if not os.path.exists(caminho_planilha):
+            logger.error(f"Arquivo não encontrado: {caminho_planilha}")
+            return {'status': 'erro', 'mensagem': 'Arquivo não encontrado'}
         
-        # Exibir colunas disponíveis para debug (será removido no código final)
-        print("Colunas disponíveis:", df.columns.tolist())
+        # Carregar planilha
+        book = load_workbook(caminho_planilha, data_only=True)
+        if aba_nome:
+            if aba_nome not in book.sheetnames:
+                logger.error(f"Aba '{aba_nome}' não encontrada na planilha")
+                return {'status': 'erro', 'mensagem': f"Aba '{aba_nome}' não encontrada na planilha"}
+            aba = book[aba_nome]
+        else:
+            aba = book.active
         
-        # Mapear colunas originais para novos nomes simplificados
-        # Incluindo possíveis variações de nomes de colunas
-        mapeamento_colunas = {
-            'Assunto': 'Nome do Cliente',
-            'Data de inclusão': 'Data de Inclusão',
-            'Título': 'Título da Matéria',
-            'Link compartilhável': 'Link da Matéria',
-            'Link': 'Link da Matéria',
-            'Link da Matéria': 'Link da Matéria',
-            'Veículo': 'Veículo',
-            'Tipo da mídia': 'Tipo de Mídia'
+        # Definir número total de linhas a processar
+        max_row = aba.max_row
+        ultima_linha = min(max_row, primeira_linha + limite_linhas - 1) if limite_linhas else max_row
+        
+        resultados = []
+        total_itens = ultima_linha - primeira_linha + 1
+        
+        # Verificar se existem colunas para link web imagem e texto
+        colunas = [cell.value for cell in aba[1]]
+        col_link_web_imagem = None
+        col_link_web_texto = None
+        
+        for idx, col_name in enumerate(colunas, 1):
+            if col_name and 'link web' in str(col_name).lower() and 'imagem' in str(col_name).lower():
+                col_link_web_imagem = idx
+                logger.info(f"Encontrada coluna Link web - Imagem: {col_name} (índice {idx})")
+            elif col_name and (('link web' in str(col_name).lower() and 'texto' in str(col_name).lower()) or
+                              ('link materia' in str(col_name).lower())):  # Adicionar suporte para "Link Materia"
+                col_link_web_texto = idx
+                logger.info(f"Encontrada coluna {col_name} (índice {idx}) - tratando como Link web - Texto")
+        
+        for idx, row_num in enumerate(range(primeira_linha, ultima_linha + 1)):
+            try:
+                # Status de progresso 
+                progresso = int((idx / total_itens) * 100)
+                logger.info(f"Processando linha {row_num} ({progresso}%)")
+                
+                # Ler dados da linha
+                url_base = aba.cell(row=row_num, column=1).value
+                
+                if not url_base:
+                    logger.warning(f"URL não encontrada na linha {row_num}")
+                    continue
+                
+                # Verificar se temos links web específicos
+                link_web_imagem = aba.cell(row=row_num, column=col_link_web_imagem).value if col_link_web_imagem else None
+                link_web_texto = aba.cell(row=row_num, column=col_link_web_texto).value if col_link_web_texto else None
+                
+                if link_web_imagem:
+                    logger.info(f"Link web - Imagem na linha {row_num}: {link_web_imagem}")
+                if link_web_texto:
+                    logger.info(f"Link web - Texto na linha {row_num}: {link_web_texto}")
+                
+                # Usar valores padrão para os campos que não conseguimos extrair
+                titulo = "Título não disponível"
+                publicacao = "Publicação não disponível"
+                data = datetime.now().strftime("%Y-%m-%d")
+                
+                # Para Portal, verificar se existe link_web_texto
+                if link_web_texto and link_web_texto.startswith(('http://', 'https://')):
+                    # Tentar buscar o link de PDF específicamente para o tipo Portal
+                    portal_link = obter_link_por_tipo_midia(link_web_texto, 'Portal')
+                    logger.info(f"Portal link extraído de link_web_texto: {portal_link}")
+                else:
+                    # Se não temos link web texto, tentar URL base para Portal
+                    portal_link = obter_link_por_tipo_midia(url_base, 'Portal')
+                    logger.info(f"Portal link extraído de url_base: {portal_link}")
+                
+                # Para Impresso, usar link_web_imagem ou processar URL para imagem
+                if link_web_imagem and link_web_imagem.startswith(('http://', 'https://')):
+                    # Para Impresso, usar diretamente o link_web_imagem
+                    imagem_link = link_web_imagem
+                    logger.info(f"Impresso link direto do link_web_imagem: {imagem_link}")
+                else:
+                    # Processar URL para encontrar imagem
+                    imagem_link = obter_link_por_tipo_midia(url_base, 'Impresso')
+                    logger.info(f"Impresso link extraído de url_base: {imagem_link}")
+                
+                # Para TV, processar URL para vídeo (não usar link_web_imagem)
+                video_link = obter_link_por_tipo_midia(url_base, 'TV')
+                logger.info(f"TV link extraído de url_base: {video_link}")
+                
+                # Para Rádio, processar URL para áudio (não usar link_web_imagem)
+                audio_link = obter_link_por_tipo_midia(url_base, 'Rádio')
+                logger.info(f"Rádio link extraído de url_base: {audio_link}")
+                
+                # Extrair palavras-chave
+                keywords = extrair_keywords_da_pagina(url_base)
+                
+                # Detectar tipo de mídia
+                tipo_midia = detectar_tipo_midia(url_base)
+                
+                # Armazenar resultados com informações detalhadas sobre os links web
+                resultados.append({
+                    'url': url_base,
+                    'titulo': titulo,
+                    'publicacao': publicacao,
+                    'data': data,
+                    'tipo_midia': tipo_midia,
+                    'keywords': keywords,
+                    'pdf': portal_link,
+                    'imagem': imagem_link,
+                    'video': video_link,
+                    'audio': audio_link,
+                    'link_web_imagem': link_web_imagem,
+                    'link_web_texto': link_web_texto
+                })
+                
+                # Atualizar células na planilha
+                aba.cell(row=row_num, column=2, value=titulo)
+                aba.cell(row=row_num, column=3, value=publicacao)
+                aba.cell(row=row_num, column=4, value=data)
+                aba.cell(row=row_num, column=5, value=tipo_midia)
+                aba.cell(row=row_num, column=6, value=', '.join(keywords) if keywords else '')
+                aba.cell(row=row_num, column=7, value=portal_link)
+                aba.cell(row=row_num, column=8, value=imagem_link)
+                aba.cell(row=row_num, column=9, value=video_link)
+                aba.cell(row=row_num, column=10, value=audio_link)
+                
+            except Exception as e:
+                logger.error(f"Erro ao processar linha {row_num}: {str(e)}", exc_info=True)
+                resultados.append({
+                    'url': url_base if 'url_base' in locals() else f"Linha {row_num}",
+                    'erro': str(e)
+                })
+        
+        # Salvar planilha com os resultados
+        output_path = f"{os.path.splitext(caminho_planilha)[0]}_processado.xlsx"
+        book.save(output_path)
+        logger.info(f"Planilha processada salva em: {output_path}")
+        
+        return {
+            'status': 'sucesso',
+            'resultados': resultados,
+            'arquivo_saida': output_path
         }
         
-        # Se estamos lidando com índices de colunas em vez de nomes
-        # Usar iloc para acessar as colunas por índice se necessário
-        colunas_por_indice = {}
-        try:
-            # Coluna C (2) - Nome do Cliente (Assunto)
-            colunas_por_indice[df.columns[2]] = 'Nome do Cliente'
-            # Coluna E (4) - Data de Inclusão
-            colunas_por_indice[df.columns[4]] = 'Data de Inclusão'
-            # Coluna L (11) - Título da Matéria
-            colunas_por_indice[df.columns[11]] = 'Título da Matéria'
-            # Coluna P (15) - Link da Matéria
-            colunas_por_indice[df.columns[15]] = 'Link da Matéria'
-            # Coluna H (7) - Veículo
-            colunas_por_indice[df.columns[7]] = 'Veículo'
-            # Coluna J (9) - Tipo de Mídia
-            colunas_por_indice[df.columns[9]] = 'Tipo de Mídia'
-        except IndexError:
-            # Algumas colunas podem não existir, o que é aceitável
-            pass
-        
-        # Adicionar as colunas por índice ao mapeamento
-        mapeamento_colunas.update(colunas_por_indice)
-        
-        # Verificar se a coluna 'Tipo da mídia' existe, por nome ou índice
-        tipo_midia_encontrado = False
-        if 'Tipo da mídia' in df.columns:
-            tipo_midia_encontrado = True
-        elif len(df.columns) > 9:  # Verificar coluna J (índice 9)
-            tipo_midia_encontrado = True
-            df['Tipo da mídia'] = df.iloc[:, 9]
-            
-        if not tipo_midia_encontrado:
-            return {'status': 'erro', 'mensagem': 'Formato de planilha inválido. Coluna de Tipo da mídia não encontrada.'}
-        
-        # Limpar dados
-        df = df.fillna('')
-        
-        # Converter campos datetime, date e time para string
-        for col in df.columns:
-            if pd.api.types.is_datetime64_any_dtype(df[col]):
-                df[col] = df[col].dt.strftime('%Y-%m-%d')
-            elif df[col].dtype == 'object':
-                # Tentativa de identificar e converter colunas com objetos time
-                sample_vals = df[col].dropna().head()
-                if len(sample_vals) > 0 and any(isinstance(val, (datetime, date, time)) for val in sample_vals):
-                    df[col] = df[col].apply(lambda x: x.isoformat() if isinstance(x, (datetime, date, time)) else x)
-        
-        # Criar um novo DataFrame com as colunas mapeadas
-        novo_df = pd.DataFrame()
-        
-        # Mapear as colunas por nome
-        for col_original, col_nova in mapeamento_colunas.items():
-            if col_original in df.columns:
-                novo_df[col_nova] = df[col_original]
-        
-        # Adicionar colunas por índice se necessário
-        # Coluna C (2) - Nome do Cliente
-        if 'Nome do Cliente' not in novo_df.columns and len(df.columns) > 2:
-            novo_df['Nome do Cliente'] = df.iloc[:, 2]
-            
-        # Coluna E (4) - Data de Inclusão
-        if 'Data de Inclusão' not in novo_df.columns and len(df.columns) > 4:
-            novo_df['Data de Inclusão'] = df.iloc[:, 4]
-            
-        # Coluna L (11) - Título da Matéria
-        if 'Título da Matéria' not in novo_df.columns and len(df.columns) > 11:
-            novo_df['Título da Matéria'] = df.iloc[:, 11]
-            
-        # Coluna P (15) - Link da Matéria
-        if 'Link da Matéria' not in novo_df.columns and len(df.columns) > 15:
-            novo_df['Link da Matéria'] = df.iloc[:, 15]
-            
-        # Coluna H (7) - Veículo
-        if 'Veículo' not in novo_df.columns and len(df.columns) > 7:
-            novo_df['Veículo'] = df.iloc[:, 7]
-            
-        # Coluna J (9) - Tipo de Mídia (se não foi adicionada anteriormente)
-        if 'Tipo de Mídia' not in novo_df.columns and len(df.columns) > 9:
-            novo_df['Tipo de Mídia'] = df.iloc[:, 9]
-        elif 'Tipo de Mídia' not in novo_df.columns and 'Tipo da mídia' in df.columns:
-            novo_df['Tipo de Mídia'] = df['Tipo da mídia']
-        
-        # Organizar os dados por tipo de mídia
-        resultado = {}
-        
-        # Agrupar por tipo de mídia
-        if 'Tipo de Mídia' in novo_df.columns:
-            tipos_midia = novo_df['Tipo de Mídia'].unique()
-        else:
-            # Como não temos a coluna "Tipo de Mídia", usamos a original
-            tipos_midia = df['Tipo da mídia'].unique() if 'Tipo da mídia' in df.columns else ['Sem classificação']
-            
-        for tipo in tipos_midia:
-            if not tipo or str(tipo).strip() == '':
-                continue
-                
-            # Filtrar o dataframe pelo tipo de mídia
-            if 'Tipo de Mídia' in novo_df.columns:
-                df_tipo = novo_df[novo_df['Tipo de Mídia'] == tipo].copy()
-            elif 'Tipo da mídia' in df.columns:
-                # Filtramos no DataFrame original
-                indices = df[df['Tipo da mídia'] == tipo].index
-                df_tipo = novo_df.loc[indices].copy()
-            else:
-                # Se não temos como filtrar, usamos todo o DataFrame
-                df_tipo = novo_df.copy()
-            
-            # Converter para lista de dicionários
-            registros = df_tipo.to_dict(orient='records')
-            
-            # Adicionar ao resultado
-            resultado[str(tipo)] = registros
-        
-        return {'status': 'sucesso', 'dados': resultado}
-        
     except Exception as e:
-        import traceback
-        traceback_str = traceback.format_exc()
-        return {'status': 'erro', 'mensagem': str(e), 'traceback': traceback_str}
+        logger.error(f"Erro ao processar planilha: {str(e)}", exc_info=True)
+        return {'status': 'erro', 'mensagem': str(e)}
 
 def exportar_planilha(dados, caminho_saida):
     """
@@ -220,6 +228,32 @@ def exportar_planilha(dados, caminho_saida):
                 
                 # Escrever na aba
                 df.to_excel(writer, sheet_name=nome_aba, index=False)
+                
+                # Ajustar a largura das colunas automaticamente
+                worksheet = writer.sheets[nome_aba]
+                
+                # Dicionário para armazenar a largura máxima de cada coluna
+                max_width = {}
+                
+                # Inicializar o dicionário com os tamanhos dos cabeçalhos
+                for idx, col in enumerate(df.columns):
+                    max_width[idx] = len(str(col)) + 2  # +2 para dar um pouco de espaço extra
+                
+                # Calcular a largura máxima para cada coluna baseada nos dados
+                for idx, col in enumerate(df.columns):
+                    # Converter todos os valores para string e obter o comprimento
+                    column_width = max(
+                        df[col].astype(str).map(len).max(),  # Maior valor dos dados
+                        max_width[idx]  # Largura atual (cabeçalho)
+                    )
+                    
+                    # Limitar a uma largura máxima razoável (opcional)
+                    max_width[idx] = min(column_width + 2, 100)  # +2 para espaço e limite de 100
+                
+                # Aplicar as larguras às colunas
+                for idx, width in max_width.items():
+                    col_letter = chr(65 + idx) if idx < 26 else chr(64 + idx // 26) + chr(65 + idx % 26)
+                    worksheet.column_dimensions[col_letter].width = width
         
         return {'status': 'sucesso', 'mensagem': f'Planilha salva com sucesso em {caminho_saida}'}
         
@@ -227,40 +261,69 @@ def exportar_planilha(dados, caminho_saida):
         return {'status': 'erro', 'mensagem': str(e)}
 
 def main():
-    # Verificar argumentos
-    if len(sys.argv) < 2:
-        print(json.dumps({'status': 'erro', 'mensagem': 'Argumentos insuficientes'}))
-        return
-        
-    # Primeiro argumento: caminho do arquivo a processar
-    caminho_arquivo = sys.argv[1]
+    """
+    Função principal que analisa os argumentos de linha de comando e executa as funções apropriadas.
     
-    # Se o arquivo de entrada for um JSON, é para exportação
-    if caminho_arquivo.endswith('.json'):
-        # Verificar se o segundo argumento (caminho de saída) foi fornecido
-        if len(sys.argv) < 3:
-            print(json.dumps({'status': 'erro', 'mensagem': 'Caminho de saída não fornecido'}))
-            return
-            
-        # Caminho de saída
-        caminho_saida = sys.argv[2]
-        
-        # Ler os dados do JSON
+    Para processar um JSON e exportar para Excel:
+    python organizador.py --json arquivo.json --saida resultado.xlsx
+    
+    Para processar uma planilha Excel:
+    python organizador.py --planilha arquivo.xlsx [--aba "Nome da Aba"] [--primeira-linha 2] [--limite-linhas 100]
+    
+    Returns:
+        String JSON com o resultado da operação
+    """
+    parser = argparse.ArgumentParser(description="Organizador de dados de midia")
+    
+    # Grupo de argumentos mutuamente exclusivos
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--json', help='Caminho para o arquivo JSON de entrada')
+    group.add_argument('--planilha', help='Caminho para a planilha Excel a ser processada')
+    
+    # Argumentos para exportação de JSON para Excel
+    parser.add_argument('--saida', help='Caminho para o arquivo Excel de saída (para uso com --json)')
+    
+    # Argumentos para processamento de planilha
+    parser.add_argument('--aba', help='Nome da aba da planilha a ser processada (opcional)')
+    parser.add_argument('--primeira-linha', type=int, default=2, 
+                       help='Número da primeira linha a processar (padrão: 2)')
+    parser.add_argument('--limite-linhas', type=int,
+                       help='Número máximo de linhas a processar (opcional)')
+    
+    args = parser.parse_args()
+    
+    resultado = None
+    
+    # Validar argumentos
+    if args.json and not args.saida:
+        logger.error("Argumento --saida é obrigatório quando --json é usado")
+        resultado = {'status': 'erro', 'mensagem': 'Argumento --saida é obrigatório quando --json é usado'}
+    elif args.json:
+        # Processar JSON para Excel
         try:
-            with open(caminho_arquivo, 'r') as f:
+            with open(args.json, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-            
-            # Exportar para Excel
-            resultado = exportar_planilha(dados, caminho_saida)
-            print(json.dumps(resultado))
-            
+            resultado = exportar_planilha(dados, args.saida)
         except Exception as e:
-            print(json.dumps({'status': 'erro', 'mensagem': str(e)}))
-            
-    else:
-        # Processar a planilha
-        resultado = processar_planilha(caminho_arquivo)
-        print(json.dumps(resultado, default=json_serial))
+            logger.error(f"Erro ao processar JSON: {str(e)}", exc_info=True)
+            resultado = {'status': 'erro', 'mensagem': str(e)}
+    elif args.planilha:
+        # Processar planilha Excel
+        try:
+            resultado = processar_planilha(
+                args.planilha, 
+                aba_nome=args.aba,
+                primeira_linha=args.primeira_linha,
+                limite_linhas=args.limite_linhas
+            )
+        except Exception as e:
+            logger.error(f"Erro ao processar planilha: {str(e)}", exc_info=True)
+            resultado = {'status': 'erro', 'mensagem': str(e)}
+    
+    # Retornar resultado como JSON
+    return json.dumps(resultado, default=json_serial, ensure_ascii=False)
 
 if __name__ == "__main__":
-    main() 
+    # Chamar a função principal e imprimir o resultado
+    resultado = main()
+    print(resultado) 

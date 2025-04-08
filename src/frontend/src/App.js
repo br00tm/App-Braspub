@@ -11,7 +11,9 @@ import {
   Card,
   ProgressBar,
   Navbar,
-  Nav
+  Nav,
+  ButtonGroup,
+  ToggleButton
 } from 'react-bootstrap';
 import './App.css';
 
@@ -26,6 +28,7 @@ function App() {
   const [processedData, setProcessedData] = useState(null);
   const [processStep, setProcessStep] = useState('');
   const [processingProgress, setProcessingProgress] = useState(0);
+  const [modoKeywords, setModoKeywords] = useState(false);
 
   // Verificar conexão com o backend a cada 10 segundos
   useEffect(() => {
@@ -77,33 +80,42 @@ function App() {
 
     try {
       // Primeiro, processar a planilha para obter os dados organizados
-      setProcessStep('Processando planilha...');
+      setProcessStep(modoKeywords ? 'Processando planilha de palavras-chave...' : 'Processando planilha...');
       setProcessingProgress(30);
-      const result = await ipcRenderer.invoke('processar-planilha', file.path);
       
-      if (result.status === 'sucesso') {
+      // Escolher o método de processamento baseado no modo
+      const processMethod = modoKeywords ? 'processar-planilha-keywords' : 'processar-planilha';
+      console.log(`Chamando método: ${processMethod} para arquivo: ${file.path}`);
+      const result = await ipcRenderer.invoke(processMethod, file.path);
+      
+      if (result && result.status === 'sucesso') {
+        console.log('Processamento bem-sucedido, dados:', result.dados);
         setProcessedData(result.dados);
         setProcessingProgress(60);
         
         // Imediatamente iniciar o processo de exportação
-        setProcessStep('Exportando planilha...');
+        setProcessStep(modoKeywords ? 'Exportando planilha de palavras-chave...' : 'Exportando planilha...');
         setProcessingProgress(80);
-        const exportResult = await ipcRenderer.invoke('exportar-planilha', result.dados);
+        
+        // Escolher o método de exportação baseado no modo
+        const exportMethod = modoKeywords ? 'exportar-planilha-keywords' : 'exportar-planilha';
+        console.log(`Chamando método de exportação: ${exportMethod}`);
+        const exportResult = await ipcRenderer.invoke(exportMethod, result.dados);
         
         setProcessingProgress(100);
         
-        if (exportResult.status === 'sucesso') {
-          setSuccess(`Planilha processada e exportada com sucesso! ${exportResult.mensagem || ''}`);
-        } else if (exportResult.status === 'cancelado') {
+        if (exportResult && exportResult.status === 'sucesso') {
+          setSuccess(`Planilha ${modoKeywords ? 'de palavras-chave ' : ''}processada e exportada com sucesso! ${exportResult.mensagem || ''}`);
+        } else if (exportResult && exportResult.status === 'cancelado') {
           setError('Exportação cancelada pelo usuário.');
         } else {
-          setError(`Erro ao exportar a planilha: ${exportResult.mensagem}`);
+          setError(`Erro ao exportar a planilha: ${exportResult?.mensagem || 'Resposta inválida do servidor'}`);
         }
       } else {
-        setError(`Erro ao processar a planilha: ${result.mensagem}`);
+        setError(`Erro ao processar a planilha: ${result?.mensagem || 'Resposta inválida do servidor'}`);
       }
     } catch (err) {
-      console.error('Erro:', err);
+      console.error('Erro ao processar/exportar:', err);
       setError(`Erro: ${err.message || 'Ocorreu um erro inesperado'}`);
     } finally {
       setLoading(false);
@@ -115,8 +127,8 @@ function App() {
   const renderProcessedStats = () => {
     if (!processedData) return null;
     
-    const totalTipos = Object.keys(processedData).length;
-    const totalItens = Object.values(processedData).reduce(
+    const totalItems = Object.keys(processedData).length;
+    const totalRegistros = Object.values(processedData).reduce(
       (sum, items) => sum + items.length, 0
     );
     
@@ -126,20 +138,20 @@ function App() {
           <Card.Title>Estatísticas do Processamento</Card.Title>
           <div className="stats-grid">
             <div className="stat-item">
-              <div className="stat-value">{totalTipos}</div>
-              <div className="stat-label">Tipos de mídia</div>
+              <div className="stat-value">{totalItems}</div>
+              <div className="stat-label">{modoKeywords ? 'Palavras-chave' : 'Tipos de mídia'}</div>
             </div>
             <div className="stat-item">
-              <div className="stat-value">{totalItens}</div>
+              <div className="stat-value">{totalRegistros}</div>
               <div className="stat-label">Itens processados</div>
             </div>
           </div>
           <div className="mt-3">
-            <h6>Tipos encontrados:</h6>
+            <h6>{modoKeywords ? 'Palavras-chave encontradas:' : 'Tipos encontrados:'}</h6>
             <div className="tipos-container">
-              {Object.keys(processedData).map(tipo => (
-                <div key={tipo} className="tipo-badge">
-                  {tipo} <span className="badge">{processedData[tipo].length}</span>
+              {Object.keys(processedData).map(item => (
+                <div key={item} className="tipo-badge">
+                  {item} <span className="badge">{processedData[item].length}</span>
                 </div>
               ))}
             </div>
@@ -179,7 +191,41 @@ function App() {
         <Row className="mb-4 text-center">
           <Col>
             <h1 className="display-5">Organizador de Planilhas</h1>
-            <p className="lead">Processe e exporte planilhas organizadas por tipo de mídia</p>
+            <p className="lead">Processe e exporte planilhas organizadas</p>
+          </Col>
+        </Row>
+        
+        {/* Seletor de modo */}
+        <Row className="mb-4 justify-content-center">
+          <Col md={6} className="text-center">
+            <ButtonGroup className="mode-selector">
+              <Button
+                variant={modoKeywords ? "outline-primary" : "primary"}
+                onClick={() => {
+                  setModoKeywords(false);
+                  setFile(null);
+                  setProcessedData(null);
+                  setError(null);
+                  setSuccess(null);
+                }}
+                className="mode-btn"
+              >
+                Tipo de Mídia
+              </Button>
+              <Button
+                variant={modoKeywords ? "primary" : "outline-primary"}
+                onClick={() => {
+                  setModoKeywords(true);
+                  setFile(null);
+                  setProcessedData(null);
+                  setError(null);
+                  setSuccess(null);
+                }}
+                className="mode-btn"
+              >
+                Palavras-chave
+              </Button>
+            </ButtonGroup>
           </Col>
         </Row>
         
@@ -202,7 +248,9 @@ function App() {
                     className="file-upload"
                   />
                   <Form.Text className="text-muted">
-                    Formato esperado: Planilha com coluna "Tipo da mídia"
+                    {modoKeywords 
+                      ? "Formato esperado: Planilha com coluna de Palavras-chave" 
+                      : "Formato esperado: Planilha com coluna 'Tipo da mídia'"}
                   </Form.Text>
                 </Form.Group>
 
@@ -249,7 +297,7 @@ function App() {
                       />
                       Processando...
                     </>
-                  ) : 'Processar e Exportar Planilha'}
+                  ) : `Processar e Exportar Planilha ${modoKeywords ? 'de Palavras-chave' : ''}`}
                 </Button>
               </Card.Body>
             </Card>
@@ -283,29 +331,39 @@ function App() {
                   <li>
                     <div className="step-icon">1</div>
                     <div className="step-content">
-                      <strong>Selecione o arquivo Excel</strong>
-                      <p>Escolha uma planilha com coluna "Tipo da mídia"</p>
+                      <strong>Selecione o modo</strong>
+                      <p>Escolha entre organizar por Tipo de Mídia ou Palavras-chave</p>
                     </div>
                   </li>
                   <li>
                     <div className="step-icon">2</div>
+                    <div className="step-content">
+                      <strong>Selecione o arquivo Excel</strong>
+                      <p>{modoKeywords 
+                        ? "Escolha uma planilha com coluna de Palavras-chave" 
+                        : "Escolha uma planilha com coluna 'Tipo da mídia'"}
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="step-icon">3</div>
                     <div className="step-content">
                       <strong>Clique em Processar</strong>
                       <p>A aplicação processará os dados automaticamente</p>
                     </div>
                   </li>
                   <li>
-                    <div className="step-icon">3</div>
+                    <div className="step-icon">4</div>
                     <div className="step-content">
                       <strong>Escolha onde salvar</strong>
                       <p>Selecione a localização para o arquivo processado</p>
                     </div>
                   </li>
                   <li>
-                    <div className="step-icon">4</div>
+                    <div className="step-icon">5</div>
                     <div className="step-content">
                       <strong>Pronto!</strong>
-                      <p>A planilha será organizada com uma aba para cada tipo de mídia</p>
+                      <p>A planilha será organizada com uma aba para cada {modoKeywords ? 'palavra-chave' : 'tipo de mídia'}</p>
                     </div>
                   </li>
                 </ol>
