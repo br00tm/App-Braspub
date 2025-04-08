@@ -1,0 +1,38 @@
+# Ambiente virtual
+.venv/
+env/
+venv/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Arquivos de compilação
+src/frontend/build/
+src/frontend/dist/
+**/__pycache__/
+*.py[cod]
+*.so
+*.dll
+*.dylib
+
+# Arquivos temporários
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.DS_Store
+Thumbs.db
+
+# Arquivos de planilha de exemplo/teste
+*.xlsx
+*.xls
+*.csv
+
+# Executáveis gerados
+*.exe
+*.out
+*.app 
