@@ -2097,3 +2097,967 @@
 2025-04-08 11:07:55,183 - INFO - Link web imagem encontrado para Estado de São Paulo, Governador, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102991138/102991138.mp4
 2025-04-08 11:07:55,183 - INFO - Link web texto encontrado para Estado de São Paulo, Governador, Segurança Pública: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
 2025-04-08 11:07:55,183 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102991138/102991138.mp4
+2025-04-08 11:07:59,017 - INFO - 127.0.0.1 - - [08/Apr/2025 11:07:59] "GET /api/status HTTP/1.1" 200 -
+2025-04-08 11:07:59,494 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:07:59,495 - INFO - Tipo de mídia detectado para Estado de São Paulo, Governador, Segurança Pública: Portal
+2025-04-08 11:07:59,495 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:07:59,496 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:07:59,496 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:07:59,496 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:07:59,787 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:07:59,789 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:07:59,789 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:07:59,789 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:07:59,790 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:07:59,790 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:07:59,790 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:08:00,050 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:00,052 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0.mp4
+2025-04-08 11:08:00,053 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0.mp4
+2025-04-08 11:08:00,053 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:08:00,053 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0
+2025-04-08 11:08:00,324 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:00,327 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0.mp3
+2025-04-08 11:08:00,327 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/FhzhkYtFlPf7Ach7FWZmbhBPblzGTjKV0.mp3
+2025-04-08 11:08:00,328 - INFO - Processando palavra-chave: Estado de São Paulo, Transportes Metropolitanos
+2025-04-08 11:08:00,328 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:00,328 - INFO - Link web imagem encontrado para Estado de São Paulo, Transportes Metropolitanos: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102976520/102976520_site.jpg
+2025-04-08 11:08:00,328 - INFO - Link web texto encontrado para Estado de São Paulo, Transportes Metropolitanos: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:00,328 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102976520/102976520_site.jpg
+2025-04-08 11:08:00,613 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:00,613 - INFO - Tipo de mídia detectado para Estado de São Paulo, Transportes Metropolitanos: Portal
+2025-04-08 11:08:00,614 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:00,614 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:00,615 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:00,615 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:00,902 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:00,904 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:00,904 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:00,904 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:00,904 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:00,905 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:00,905 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:01,180 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:01,182 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0.mp4
+2025-04-08 11:08:01,182 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0.mp4
+2025-04-08 11:08:01,183 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:01,183 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0
+2025-04-08 11:08:01,444 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:01,447 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0.mp3
+2025-04-08 11:08:01,447 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/0fxZEmoJSVChofKPcLIGlRBPblzGTjKV0.mp3
+2025-04-08 11:08:01,448 - INFO - Processando palavra-chave: Administração Penitenciária, Comunicação
+2025-04-08 11:08:01,448 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:01,448 - INFO - Link web imagem encontrado para Administração Penitenciária, Comunicação: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102984561/102984561_site.jpg
+2025-04-08 11:08:01,449 - INFO - Link web texto encontrado para Administração Penitenciária, Comunicação: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:01,449 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102984561/102984561_site.jpg
+2025-04-08 11:08:02,028 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:02,028 - INFO - Tipo de mídia detectado para Administração Penitenciária, Comunicação: Portal
+2025-04-08 11:08:02,028 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,029 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,029 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,029 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,298 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:02,300 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:02,300 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:02,300 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:02,300 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:02,301 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,301 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,578 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:02,580 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0.mp4
+2025-04-08 11:08:02,580 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0.mp4
+2025-04-08 11:08:02,581 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,581 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0
+2025-04-08 11:08:02,925 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:02,928 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0.mp3
+2025-04-08 11:08:02,928 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/9d0CBC_aMagTekgOE_tGVxBPblzGTjKV0.mp3
+2025-04-08 11:08:02,929 - INFO - Processando palavra-chave: Ciência, Tecnologia e Inovação, Educação, Estado de São Paulo
+2025-04-08 11:08:02,929 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:02,930 - INFO - Link web imagem encontrado para Ciência, Tecnologia e Inovação, Educação, Estado de São Paulo: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102989030/102989030.mp3
+2025-04-08 11:08:02,930 - INFO - Link web texto encontrado para Ciência, Tecnologia e Inovação, Educação, Estado de São Paulo: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:02,930 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102989030/102989030.mp3
+2025-04-08 11:08:03,758 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:03,758 - INFO - Tipo de mídia detectado para Ciência, Tecnologia e Inovação, Educação, Estado de São Paulo: Portal
+2025-04-08 11:08:03,758 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:03,759 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:03,759 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:03,759 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:04,031 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:04,033 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:04,034 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:04,034 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:04,034 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:04,034 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:04,034 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:04,327 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:04,330 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0.mp4
+2025-04-08 11:08:04,330 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0.mp4
+2025-04-08 11:08:04,330 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:04,330 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0
+2025-04-08 11:08:04,592 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:04,594 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0.mp3
+2025-04-08 11:08:04,594 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/mV2ROMfJUpxTF6MS_cXhURBPblzGTjKV0.mp3
+2025-04-08 11:08:04,595 - INFO - Processando palavra-chave: Educação, Estado de São Paulo, Secretaria da Fazenda e Planejamento
+2025-04-08 11:08:04,595 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:04,595 - INFO - Link web imagem encontrado para Educação, Estado de São Paulo, Secretaria da Fazenda e Planejamento: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102988788/102988788_site.jpg
+2025-04-08 11:08:04,596 - INFO - Link web texto encontrado para Educação, Estado de São Paulo, Secretaria da Fazenda e Planejamento: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:04,596 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102988788/102988788_site.jpg
+2025-04-08 11:08:04,914 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:04,915 - INFO - Tipo de mídia detectado para Educação, Estado de São Paulo, Secretaria da Fazenda e Planejamento: Portal
+2025-04-08 11:08:04,915 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:04,915 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:04,915 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:04,916 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:05,212 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:05,214 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:05,214 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:05,214 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:05,215 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:05,215 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:05,215 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:05,480 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:05,483 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0.mp4
+2025-04-08 11:08:05,484 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0.mp4
+2025-04-08 11:08:05,485 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:05,485 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0
+2025-04-08 11:08:05,726 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:05,729 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0.mp3
+2025-04-08 11:08:05,729 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/4rnQIDGRp-_VElkYqmWd-BBPblzGTjKV0.mp3
+2025-04-08 11:08:05,730 - INFO - Processando palavra-chave: Estado de São Paulo, Turismo e Viagens
+2025-04-08 11:08:05,730 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:05,730 - INFO - Link web imagem encontrado para Estado de São Paulo, Turismo e Viagens: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102975734/102975734_site.jpg
+2025-04-08 11:08:05,730 - INFO - Link web texto encontrado para Estado de São Paulo, Turismo e Viagens: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:05,730 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102975734/102975734_site.jpg
+2025-04-08 11:08:06,267 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:06,268 - INFO - Tipo de mídia detectado para Estado de São Paulo, Turismo e Viagens: Portal
+2025-04-08 11:08:06,268 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:06,268 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:06,268 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:06,268 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:06,530 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:06,533 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:06,533 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:06,533 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:06,533 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:06,534 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:06,534 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:06,778 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:06,780 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0.mp4
+2025-04-08 11:08:06,780 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0.mp4
+2025-04-08 11:08:06,781 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:06,781 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0
+2025-04-08 11:08:07,029 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:07,031 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0.mp3
+2025-04-08 11:08:07,032 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/vhveHyTBCb7Ex2IZshOVfBBPblzGTjKV0.mp3
+2025-04-08 11:08:07,032 - INFO - Processando palavra-chave: Casa Civil, Educação, Estado de São Paulo, Governador, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador
+2025-04-08 11:08:07,033 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:07,033 - INFO - Link web imagem encontrado para Casa Civil, Educação, Estado de São Paulo, Governador, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102987832/102987832_site.jpg
+2025-04-08 11:08:07,033 - INFO - Link web texto encontrado para Casa Civil, Educação, Estado de São Paulo, Governador, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:07,033 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102987832/102987832_site.jpg
+2025-04-08 11:08:07,820 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:07,820 - INFO - Tipo de mídia detectado para Casa Civil, Educação, Estado de São Paulo, Governador, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador: Portal
+2025-04-08 11:08:07,820 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:07,821 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:07,821 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:07,821 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:08,086 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:08,089 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:08,090 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:08,090 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:08,090 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:08,090 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:08,091 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:08,479 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:08,482 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0.mp4
+2025-04-08 11:08:08,482 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0.mp4
+2025-04-08 11:08:08,482 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:08,482 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0
+2025-04-08 11:08:08,789 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:08,792 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0.mp3
+2025-04-08 11:08:08,792 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/munkWJJjFg0tlFsZ2Ao25RBPblzGTjKV0.mp3
+2025-04-08 11:08:08,793 - INFO - Processando palavra-chave: Educação, Estado de São Paulo, Governador
+2025-04-08 11:08:08,793 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:08,793 - INFO - Link web imagem encontrado para Educação, Estado de São Paulo, Governador: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102992368/102992368_site.jpg
+2025-04-08 11:08:08,793 - INFO - Link web texto encontrado para Educação, Estado de São Paulo, Governador: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:08,793 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102992368/102992368_site.jpg
+2025-04-08 11:08:08,932 - INFO - 127.0.0.1 - - [08/Apr/2025 11:08:08] "GET /api/status HTTP/1.1" 200 -
+2025-04-08 11:08:09,161 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:09,161 - INFO - Tipo de mídia detectado para Educação, Estado de São Paulo, Governador: Portal
+2025-04-08 11:08:09,161 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,161 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,162 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,162 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,396 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:09,398 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:09,398 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:09,398 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:09,398 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:09,399 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,399 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,670 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:09,672 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0.mp4
+2025-04-08 11:08:09,673 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0.mp4
+2025-04-08 11:08:09,673 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,673 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0
+2025-04-08 11:08:09,924 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:09,927 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0.mp3
+2025-04-08 11:08:09,928 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/ffFq828d8IzOGjDrxeOW5BBPblzGTjKV0.mp3
+2025-04-08 11:08:09,928 - INFO - Processando palavra-chave: Governador, Saúde
+2025-04-08 11:08:09,929 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:09,929 - INFO - Link web imagem encontrado para Governador, Saúde: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102990664/102990664_site.jpg
+2025-04-08 11:08:09,929 - INFO - Link web texto encontrado para Governador, Saúde: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:09,929 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102990664/102990664_site.jpg
+2025-04-08 11:08:10,224 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:10,224 - INFO - Tipo de mídia detectado para Governador, Saúde: Portal
+2025-04-08 11:08:10,224 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,224 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,225 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,225 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,461 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:10,464 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:10,464 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:10,464 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:10,464 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:10,465 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,465 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,682 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:10,685 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0.mp4
+2025-04-08 11:08:10,685 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0.mp4
+2025-04-08 11:08:10,686 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,686 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0
+2025-04-08 11:08:10,911 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:10,913 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0.mp3
+2025-04-08 11:08:10,913 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/dAKejbLKBVUdQJVYxscRdxBPblzGTjKV0.mp3
+2025-04-08 11:08:10,914 - INFO - Processando palavra-chave: Ciência, Tecnologia e Inovação, Meio Ambiente, Infraestrutura e Logística
+2025-04-08 11:08:10,914 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:10,914 - INFO - Link web imagem encontrado para Ciência, Tecnologia e Inovação, Meio Ambiente, Infraestrutura e Logística: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102992372/102992372_site.jpg
+2025-04-08 11:08:10,914 - INFO - Link web texto encontrado para Ciência, Tecnologia e Inovação, Meio Ambiente, Infraestrutura e Logística: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:10,914 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102992372/102992372_site.jpg
+2025-04-08 11:08:11,265 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:11,265 - INFO - Tipo de mídia detectado para Ciência, Tecnologia e Inovação, Meio Ambiente, Infraestrutura e Logística: Portal
+2025-04-08 11:08:11,265 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:11,265 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:11,266 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:11,266 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:11,533 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:11,536 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:11,536 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:11,536 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:11,536 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:11,537 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:11,537 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:11,759 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:11,762 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0.mp4
+2025-04-08 11:08:11,762 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0.mp4
+2025-04-08 11:08:11,763 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:11,763 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0
+2025-04-08 11:08:12,010 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:12,012 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0.mp3
+2025-04-08 11:08:12,013 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/ffFq828d8IySWKxBrlWa_hBPblzGTjKV0.mp3
+2025-04-08 11:08:12,014 - INFO - Processando palavra-chave: Ciência, Tecnologia e Inovação, Saúde, Segurança Pública
+2025-04-08 11:08:12,014 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:12,014 - INFO - Link web imagem encontrado para Ciência, Tecnologia e Inovação, Saúde, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102993639/102993639_site.jpg
+2025-04-08 11:08:12,014 - INFO - Link web texto encontrado para Ciência, Tecnologia e Inovação, Saúde, Segurança Pública: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,014 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102993639/102993639_site.jpg
+2025-04-08 11:08:12,298 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:12,299 - INFO - Tipo de mídia detectado para Ciência, Tecnologia e Inovação, Saúde, Segurança Pública: Portal
+2025-04-08 11:08:12,299 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,299 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,299 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,299 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,584 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:12,586 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:12,586 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:12,587 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:12,587 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:12,587 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,588 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,836 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:12,842 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0.mp4
+2025-04-08 11:08:12,842 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0.mp4
+2025-04-08 11:08:12,843 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:12,843 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0
+2025-04-08 11:08:13,208 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:13,211 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0.mp3
+2025-04-08 11:08:13,211 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/adzE-qFY35mD3U520GdybBBPblzGTjKV0.mp3
+2025-04-08 11:08:13,212 - INFO - Processando palavra-chave: Educação, Estado de São Paulo, Segurança Pública
+2025-04-08 11:08:13,212 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:13,212 - INFO - Link web imagem encontrado para Educação, Estado de São Paulo, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102996172/102996172_info_site.jpg
+2025-04-08 11:08:13,212 - INFO - Link web texto encontrado para Educação, Estado de São Paulo, Segurança Pública: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:13,212 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102996172/102996172_info_site.jpg
+2025-04-08 11:08:13,502 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:13,503 - INFO - Tipo de mídia detectado para Educação, Estado de São Paulo, Segurança Pública: Portal
+2025-04-08 11:08:13,503 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:13,504 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:13,504 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:13,505 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:13,860 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:13,862 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:13,862 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:13,862 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:13,863 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:13,863 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:13,863 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:14,142 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:14,144 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0.mp4
+2025-04-08 11:08:14,144 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0.mp4
+2025-04-08 11:08:14,145 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:14,145 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0
+2025-04-08 11:08:14,454 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:14,460 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0.mp3
+2025-04-08 11:08:14,460 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizTUKlI1lc3TBBPblzGTjKV0.mp3
+2025-04-08 11:08:14,461 - INFO - Processando palavra-chave: Desenvolvimento Urbano e Habitação, Meio Ambiente, Infraestrutura e Logística
+2025-04-08 11:08:14,461 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:14,461 - INFO - Link web imagem encontrado para Desenvolvimento Urbano e Habitação, Meio Ambiente, Infraestrutura e Logística: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102999458/102999458_site.jpg
+2025-04-08 11:08:14,461 - INFO - Link web texto encontrado para Desenvolvimento Urbano e Habitação, Meio Ambiente, Infraestrutura e Logística: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:14,462 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102999458/102999458_site.jpg
+2025-04-08 11:08:14,886 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:14,886 - INFO - Tipo de mídia detectado para Desenvolvimento Urbano e Habitação, Meio Ambiente, Infraestrutura e Logística: Portal
+2025-04-08 11:08:14,887 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:14,887 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:14,887 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:14,887 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:15,170 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:15,172 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:15,172 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:15,172 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:15,172 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:15,173 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:15,173 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:15,459 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:15,461 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0.mp4
+2025-04-08 11:08:15,461 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0.mp4
+2025-04-08 11:08:15,462 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:15,462 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0
+2025-04-08 11:08:15,761 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:15,763 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0.mp3
+2025-04-08 11:08:15,763 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZsbhc5MWHAZRBPblzGTjKV0.mp3
+2025-04-08 11:08:15,764 - INFO - Processando palavra-chave: Estado de São Paulo, Governador, Parcerias em Investimentos, Procuradoria Geral do Estado, Secretaria da Fazenda e Planejamento, Vice-Governador
+2025-04-08 11:08:15,764 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:15,764 - WARNING - Link web imagem não encontrado para Estado de São Paulo, Governador, Parcerias em Investimentos, Procuradoria Geral do Estado, Secretaria da Fazenda e Planejamento, Vice-Governador nos registros
+2025-04-08 11:08:15,764 - WARNING - Valores disponíveis: ['']
+2025-04-08 11:08:15,764 - INFO - Link web texto encontrado para Estado de São Paulo, Governador, Parcerias em Investimentos, Procuradoria Geral do Estado, Secretaria da Fazenda e Planejamento, Vice-Governador: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:15,764 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:15,764 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:15,765 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:15,765 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:16,039 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:16,041 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:16,041 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:16,041 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:16,041 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:16,042 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:16,042 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:16,488 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:16,490 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0.mp4
+2025-04-08 11:08:16,491 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0.mp4
+2025-04-08 11:08:16,491 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:16,491 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0
+2025-04-08 11:08:17,028 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:17,030 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0.mp3
+2025-04-08 11:08:17,030 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZl6zbNjtNVJRBPblzGTjKV0.mp3
+2025-04-08 11:08:17,031 - INFO - Processando palavra-chave: Estado de São Paulo, Justiça e Cidadania, Políticas para a Mulher, Secretaria da Fazenda e Planejamento, Segurança Pública
+2025-04-08 11:08:17,031 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:17,031 - INFO - Link web imagem encontrado para Estado de São Paulo, Justiça e Cidadania, Políticas para a Mulher, Secretaria da Fazenda e Planejamento, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103000774/103000774_site.jpg
+2025-04-08 11:08:17,032 - INFO - Link web texto encontrado para Estado de São Paulo, Justiça e Cidadania, Políticas para a Mulher, Secretaria da Fazenda e Planejamento, Segurança Pública: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:17,032 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103000774/103000774_site.jpg
+2025-04-08 11:08:17,591 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:17,592 - INFO - Tipo de mídia detectado para Estado de São Paulo, Justiça e Cidadania, Políticas para a Mulher, Secretaria da Fazenda e Planejamento, Segurança Pública: Portal
+2025-04-08 11:08:17,592 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:17,592 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:17,593 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:17,593 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:17,944 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:17,946 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:17,946 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:17,946 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:17,946 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:17,947 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:17,947 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:18,176 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:18,179 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0.mp4
+2025-04-08 11:08:18,180 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0.mp4
+2025-04-08 11:08:18,180 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:18,181 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0
+2025-04-08 11:08:18,469 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:18,471 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0.mp3
+2025-04-08 11:08:18,471 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfCCeoN_UASGWhBPblzGTjKV0.mp3
+2025-04-08 11:08:18,472 - INFO - Processando palavra-chave: Administração Penitenciária, Estado de São Paulo
+2025-04-08 11:08:18,472 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:18,473 - INFO - Link web imagem encontrado para Administração Penitenciária, Estado de São Paulo: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103003827/103003827.mp3
+2025-04-08 11:08:18,473 - INFO - Link web texto encontrado para Administração Penitenciária, Estado de São Paulo: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:18,473 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103003827/103003827.mp3
+2025-04-08 11:08:18,932 - INFO - 127.0.0.1 - - [08/Apr/2025 11:08:18] "GET /api/status HTTP/1.1" 200 -
+2025-04-08 11:08:20,419 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:20,419 - INFO - Tipo de mídia detectado para Administração Penitenciária, Estado de São Paulo: Portal
+2025-04-08 11:08:20,419 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:20,420 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:20,420 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:20,420 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:20,669 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:20,671 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:20,671 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:20,672 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:20,672 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:20,672 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:20,672 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:20,916 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:20,919 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0.mp4
+2025-04-08 11:08:20,919 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0.mp4
+2025-04-08 11:08:20,919 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:20,920 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0
+2025-04-08 11:08:21,188 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:21,190 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0.mp3
+2025-04-08 11:08:21,191 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/xMQsQAM3Qt_cTiBw5RWUyxBPblzGTjKV0.mp3
+2025-04-08 11:08:21,192 - INFO - Processando palavra-chave: Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística
+2025-04-08 11:08:21,192 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:21,192 - INFO - Link web imagem encontrado para Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102999188/102999188_info_site.jpg
+2025-04-08 11:08:21,192 - INFO - Link web texto encontrado para Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,192 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102999188/102999188_info_site.jpg
+2025-04-08 11:08:21,481 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:21,482 - INFO - Tipo de mídia detectado para Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística: Portal
+2025-04-08 11:08:21,482 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,482 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,483 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,483 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,699 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:21,702 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:21,703 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:21,703 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:21,703 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:21,703 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,704 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,950 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:21,953 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0.mp4
+2025-04-08 11:08:21,953 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0.mp4
+2025-04-08 11:08:21,953 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:21,953 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0
+2025-04-08 11:08:22,200 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:22,202 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0.mp3
+2025-04-08 11:08:22,202 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcZ5_-_8sLcnpxBPblzGTjKV0.mp3
+2025-04-08 11:08:22,203 - INFO - Processando palavra-chave: Saúde, Segurança Pública
+2025-04-08 11:08:22,203 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:22,204 - INFO - Link web imagem encontrado para Saúde, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102999456/102999456_site.jpg
+2025-04-08 11:08:22,204 - INFO - Link web texto encontrado para Saúde, Segurança Pública: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:22,204 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102999456/102999456_site.jpg
+2025-04-08 11:08:22,651 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:22,651 - INFO - Tipo de mídia detectado para Saúde, Segurança Pública: Portal
+2025-04-08 11:08:22,652 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:22,652 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:22,652 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:22,652 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:22,899 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:22,903 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:22,903 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:22,903 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:22,903 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:22,904 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:22,904 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:23,143 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:23,146 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0.mp4
+2025-04-08 11:08:23,146 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0.mp4
+2025-04-08 11:08:23,146 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:23,147 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0
+2025-04-08 11:08:23,488 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:23,490 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0.mp3
+2025-04-08 11:08:23,490 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/lzmsrDnQKcaqEPq7SiNoORBPblzGTjKV0.mp3
+2025-04-08 11:08:23,491 - INFO - Processando palavra-chave: Casa Militar e Defesa Civil, Governador, Meio Ambiente, Infraestrutura e Logística, Segurança Pública
+2025-04-08 11:08:23,491 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:23,492 - INFO - Link web imagem encontrado para Casa Militar e Defesa Civil, Governador, Meio Ambiente, Infraestrutura e Logística, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102996643/102996643_site.jpg
+2025-04-08 11:08:23,492 - INFO - Link web texto encontrado para Casa Militar e Defesa Civil, Governador, Meio Ambiente, Infraestrutura e Logística, Segurança Pública: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:23,492 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/102996643/102996643_site.jpg
+2025-04-08 11:08:24,118 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:24,118 - INFO - Tipo de mídia detectado para Casa Militar e Defesa Civil, Governador, Meio Ambiente, Infraestrutura e Logística, Segurança Pública: Portal
+2025-04-08 11:08:24,118 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:24,118 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:24,119 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:24,119 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:24,511 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:24,513 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:24,513 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:24,513 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:24,513 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:24,514 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:24,514 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:25,077 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:25,080 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0.mp4
+2025-04-08 11:08:25,080 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0.mp4
+2025-04-08 11:08:25,080 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:25,080 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0
+2025-04-08 11:08:25,526 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:25,528 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0.mp3
+2025-04-08 11:08:25,528 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/Jgy9HV0FzizunzUz43qYqRBPblzGTjKV0.mp3
+2025-04-08 11:08:25,529 - INFO - Processando palavra-chave: Estado de São Paulo, Governador, Parcerias em Investimentos, Secretaria da Fazenda e Planejamento, Vice-Governador
+2025-04-08 11:08:25,529 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:25,529 - INFO - Link web imagem encontrado para Estado de São Paulo, Governador, Parcerias em Investimentos, Secretaria da Fazenda e Planejamento, Vice-Governador: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103005283/103005283_site.jpg
+2025-04-08 11:08:25,529 - INFO - Link web texto encontrado para Estado de São Paulo, Governador, Parcerias em Investimentos, Secretaria da Fazenda e Planejamento, Vice-Governador: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:25,529 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103005283/103005283_site.jpg
+2025-04-08 11:08:26,082 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:26,083 - INFO - Tipo de mídia detectado para Estado de São Paulo, Governador, Parcerias em Investimentos, Secretaria da Fazenda e Planejamento, Vice-Governador: Portal
+2025-04-08 11:08:26,083 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:26,083 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:26,083 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:26,083 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:26,624 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:26,626 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:26,626 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:26,626 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:26,626 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:26,627 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:26,627 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:27,012 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:27,014 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0.mp4
+2025-04-08 11:08:27,014 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0.mp4
+2025-04-08 11:08:27,015 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:27,015 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0
+2025-04-08 11:08:27,289 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:27,291 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0.mp3
+2025-04-08 11:08:27,291 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoY66vK3xMvLYBBPblzGTjKV0.mp3
+2025-04-08 11:08:27,292 - INFO - Processando palavra-chave: Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Vice-Governador
+2025-04-08 11:08:27,292 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:27,292 - INFO - Link web imagem encontrado para Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Vice-Governador: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103005268/103005268_site.jpg
+2025-04-08 11:08:27,292 - INFO - Link web texto encontrado para Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Vice-Governador: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:27,292 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103005268/103005268_site.jpg
+2025-04-08 11:08:27,884 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:27,884 - INFO - Tipo de mídia detectado para Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Vice-Governador: Portal
+2025-04-08 11:08:27,884 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:27,884 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:27,885 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:27,885 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:28,154 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:28,157 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:28,157 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:28,157 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:28,157 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:28,157 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:28,158 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:28,406 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:28,408 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0.mp4
+2025-04-08 11:08:28,408 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0.mp4
+2025-04-08 11:08:28,409 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:28,409 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0
+2025-04-08 11:08:28,674 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:28,676 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0.mp3
+2025-04-08 11:08:28,677 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/aKuPNgEBvoYevQVYR-pd0BBPblzGTjKV0.mp3
+2025-04-08 11:08:28,678 - INFO - Processando palavra-chave: Ciência, Tecnologia e Inovação, Saúde
+2025-04-08 11:08:28,678 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:28,678 - INFO - Link web imagem encontrado para Ciência, Tecnologia e Inovação, Saúde: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006686/103006686_site.jpg
+2025-04-08 11:08:28,678 - INFO - Link web texto encontrado para Ciência, Tecnologia e Inovação, Saúde: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:28,679 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006686/103006686_site.jpg
+2025-04-08 11:08:28,928 - INFO - 127.0.0.1 - - [08/Apr/2025 11:08:28] "GET /api/status HTTP/1.1" 200 -
+2025-04-08 11:08:29,539 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:29,539 - INFO - Tipo de mídia detectado para Ciência, Tecnologia e Inovação, Saúde: Portal
+2025-04-08 11:08:29,540 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:29,540 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:29,540 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:29,540 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:29,788 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:29,790 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:29,790 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:29,790 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:29,790 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:29,791 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:29,791 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:30,040 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:30,042 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0.mp4
+2025-04-08 11:08:30,042 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0.mp4
+2025-04-08 11:08:30,043 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:30,043 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0
+2025-04-08 11:08:30,279 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:30,281 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0.mp3
+2025-04-08 11:08:30,281 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzQRwGTUXVbgFRBPblzGTjKV0.mp3
+2025-04-08 11:08:30,282 - INFO - Processando palavra-chave: Administração Penitenciária, Governador, Segurança Pública
+2025-04-08 11:08:30,282 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:30,282 - INFO - Link web imagem encontrado para Administração Penitenciária, Governador, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006535/103006535_site.jpg
+2025-04-08 11:08:30,283 - INFO - Link web texto encontrado para Administração Penitenciária, Governador, Segurança Pública: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:30,283 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006535/103006535_site.jpg
+2025-04-08 11:08:31,166 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:31,166 - INFO - Tipo de mídia detectado para Administração Penitenciária, Governador, Segurança Pública: Portal
+2025-04-08 11:08:31,166 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,167 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,167 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,167 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,442 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:31,444 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:31,445 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:31,445 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:31,445 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:31,445 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,446 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,739 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:31,741 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0.mp4
+2025-04-08 11:08:31,741 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0.mp4
+2025-04-08 11:08:31,741 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,741 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0
+2025-04-08 11:08:31,979 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:31,981 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0.mp3
+2025-04-08 11:08:31,982 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzT9_uzYmX8yHBBPblzGTjKV0.mp3
+2025-04-08 11:08:31,982 - INFO - Processando palavra-chave: Comunicação
+2025-04-08 11:08:31,982 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:31,983 - INFO - Link web imagem encontrado para Comunicação: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006100/103006100_site.jpg
+2025-04-08 11:08:31,983 - INFO - Link web texto encontrado para Comunicação: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:31,983 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006100/103006100_site.jpg
+2025-04-08 11:08:32,301 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:32,301 - INFO - Tipo de mídia detectado para Comunicação: Portal
+2025-04-08 11:08:32,301 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:32,301 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:32,302 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:32,302 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:32,569 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:32,571 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:32,571 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:32,572 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:32,572 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:32,572 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:32,572 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:32,792 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:32,795 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0.mp4
+2025-04-08 11:08:32,795 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0.mp4
+2025-04-08 11:08:32,795 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:32,795 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0
+2025-04-08 11:08:33,015 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:33,017 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0.mp3
+2025-04-08 11:08:33,018 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzThzGPEYZzrRRBPblzGTjKV0.mp3
+2025-04-08 11:08:33,019 - INFO - Processando palavra-chave: Casa Civil, Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Segurança Pública
+2025-04-08 11:08:33,019 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:33,019 - INFO - Link web imagem encontrado para Casa Civil, Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006498/103006498_info_site.jpg
+2025-04-08 11:08:33,019 - INFO - Link web texto encontrado para Casa Civil, Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Segurança Pública: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,019 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103006498/103006498_info_site.jpg
+2025-04-08 11:08:33,151 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:33,151 - INFO - Tipo de mídia detectado para Casa Civil, Estado de São Paulo, Governador, Secretaria da Fazenda e Planejamento, Segurança Pública: Portal
+2025-04-08 11:08:33,151 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,151 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,152 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,152 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,419 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:33,421 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:33,421 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:33,422 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:33,422 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:33,422 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,423 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,663 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:33,665 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0.mp4
+2025-04-08 11:08:33,666 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0.mp4
+2025-04-08 11:08:33,666 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,666 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0
+2025-04-08 11:08:33,905 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:33,908 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0.mp3
+2025-04-08 11:08:33,909 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/NSYJL0nRwzTnnljWtjx6fxBPblzGTjKV0.mp3
+2025-04-08 11:08:33,910 - INFO - Processando palavra-chave: Desenvolvimento Urbano e Habitação
+2025-04-08 11:08:33,910 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:33,910 - INFO - Link web imagem encontrado para Desenvolvimento Urbano e Habitação: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103000576/103000576_site.jpg
+2025-04-08 11:08:33,910 - INFO - Link web texto encontrado para Desenvolvimento Urbano e Habitação: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:33,910 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/01/103000576/103000576_site.jpg
+2025-04-08 11:08:34,186 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:34,187 - INFO - Tipo de mídia detectado para Desenvolvimento Urbano e Habitação: Portal
+2025-04-08 11:08:34,187 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,187 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,187 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,187 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,411 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:34,413 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:34,413 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:34,413 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:34,413 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:34,414 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,414 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,639 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:34,642 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0.mp4
+2025-04-08 11:08:34,642 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0.mp4
+2025-04-08 11:08:34,642 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,642 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0
+2025-04-08 11:08:34,889 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:34,892 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0.mp3
+2025-04-08 11:08:34,892 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/RTOzDYGeSfAOEJY2jWBdpRBPblzGTjKV0.mp3
+2025-04-08 11:08:34,892 - INFO - Processando palavra-chave: CGE, Estado de São Paulo, Governador
+2025-04-08 11:08:34,893 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:34,893 - INFO - Link web imagem encontrado para CGE, Estado de São Paulo, Governador: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103007604/103007604_site.jpg
+2025-04-08 11:08:34,893 - INFO - Link web texto encontrado para CGE, Estado de São Paulo, Governador: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:34,893 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103007604/103007604_site.jpg
+2025-04-08 11:08:35,594 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:35,595 - INFO - Tipo de mídia detectado para CGE, Estado de São Paulo, Governador: Portal
+2025-04-08 11:08:35,595 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:35,595 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:35,596 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:35,596 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:35,852 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:35,854 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:35,854 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:35,854 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:35,854 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:35,855 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:35,855 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:36,093 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:36,095 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0.mp4
+2025-04-08 11:08:36,095 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0.mp4
+2025-04-08 11:08:36,096 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:36,096 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0
+2025-04-08 11:08:36,328 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:36,331 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0.mp3
+2025-04-08 11:08:36,331 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX2DKrOt-HJ6aRBPblzGTjKV0.mp3
+2025-04-08 11:08:36,332 - INFO - Processando palavra-chave: Governador, Segurança Pública, Transportes Metropolitanos
+2025-04-08 11:08:36,332 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:36,332 - INFO - Link web imagem encontrado para Governador, Segurança Pública, Transportes Metropolitanos: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011000/103011000_site.jpg
+2025-04-08 11:08:36,332 - INFO - Link web texto encontrado para Governador, Segurança Pública, Transportes Metropolitanos: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:36,332 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011000/103011000_site.jpg
+2025-04-08 11:08:37,381 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:37,382 - INFO - Tipo de mídia detectado para Governador, Segurança Pública, Transportes Metropolitanos: Portal
+2025-04-08 11:08:37,382 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:37,383 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:37,383 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:37,383 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:40,068 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:40,070 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:40,070 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:40,070 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:40,070 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:40,071 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:40,071 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:41,077 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:41,080 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0.mp4
+2025-04-08 11:08:41,080 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0.mp4
+2025-04-08 11:08:41,081 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:41,081 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0
+2025-04-08 11:08:41,370 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:41,372 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0.mp3
+2025-04-08 11:08:41,372 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/FUp0Se194Mx63dNo3so3RBBPblzGTjKV0.mp3
+2025-04-08 11:08:41,373 - INFO - Processando palavra-chave: Casa Militar e Defesa Civil, Estado de São Paulo, Secretaria da Fazenda e Planejamento
+2025-04-08 11:08:41,373 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:41,373 - INFO - Link web imagem encontrado para Casa Militar e Defesa Civil, Estado de São Paulo, Secretaria da Fazenda e Planejamento: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011237/103011237_site.jpg
+2025-04-08 11:08:41,374 - INFO - Link web texto encontrado para Casa Militar e Defesa Civil, Estado de São Paulo, Secretaria da Fazenda e Planejamento: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:41,374 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011237/103011237_site.jpg
+2025-04-08 11:08:41,652 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:41,652 - INFO - Tipo de mídia detectado para Casa Militar e Defesa Civil, Estado de São Paulo, Secretaria da Fazenda e Planejamento: Portal
+2025-04-08 11:08:41,653 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:41,653 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:41,653 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:41,653 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:41,915 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:41,918 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:41,918 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:41,918 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:41,919 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:41,919 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:41,919 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:42,161 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:42,163 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0.mp4
+2025-04-08 11:08:42,163 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0.mp4
+2025-04-08 11:08:42,164 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:42,164 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0
+2025-04-08 11:08:42,411 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:42,413 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0.mp3
+2025-04-08 11:08:42,414 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/FUp0Se194MyTZ8eyhCdkWBBPblzGTjKV0.mp3
+2025-04-08 11:08:42,414 - INFO - Processando palavra-chave: Estado de São Paulo, Procuradoria Geral do Estado, Saúde, Secretaria da Fazenda e Planejamento
+2025-04-08 11:08:42,415 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:42,415 - INFO - Link web imagem encontrado para Estado de São Paulo, Procuradoria Geral do Estado, Saúde, Secretaria da Fazenda e Planejamento: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103007126/103007126_site.jpg
+2025-04-08 11:08:42,415 - INFO - Link web texto encontrado para Estado de São Paulo, Procuradoria Geral do Estado, Saúde, Secretaria da Fazenda e Planejamento: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:42,415 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103007126/103007126_site.jpg
+2025-04-08 11:08:42,715 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:42,716 - INFO - Tipo de mídia detectado para Estado de São Paulo, Procuradoria Geral do Estado, Saúde, Secretaria da Fazenda e Planejamento: Portal
+2025-04-08 11:08:42,716 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:42,716 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:42,717 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:42,717 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:42,990 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:42,992 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:42,992 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:42,992 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:42,992 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:42,993 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:42,993 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:43,262 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:43,267 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0.mp4
+2025-04-08 11:08:43,267 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0.mp4
+2025-04-08 11:08:43,268 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:43,268 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0
+2025-04-08 11:08:43,529 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:43,532 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0.mp3
+2025-04-08 11:08:43,532 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/89OQ1MWjgX3iE0giAMjZVRBPblzGTjKV0.mp3
+2025-04-08 11:08:43,533 - INFO - Processando palavra-chave: Casa Militar e Defesa Civil, Governador
+2025-04-08 11:08:43,533 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:43,533 - INFO - Link web imagem encontrado para Casa Militar e Defesa Civil, Governador: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011925/103011925_site.jpg
+2025-04-08 11:08:43,533 - INFO - Link web texto encontrado para Casa Militar e Defesa Civil, Governador: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:43,534 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011925/103011925_site.jpg
+2025-04-08 11:08:43,857 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:43,857 - INFO - Tipo de mídia detectado para Casa Militar e Defesa Civil, Governador: Portal
+2025-04-08 11:08:43,857 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:43,858 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:43,858 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:43,858 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:44,199 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:44,202 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:44,202 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:44,202 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:44,202 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:44,203 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:44,203 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:44,454 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:44,456 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0.mp4
+2025-04-08 11:08:44,457 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0.mp4
+2025-04-08 11:08:44,457 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:44,457 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0
+2025-04-08 11:08:44,758 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:44,760 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0.mp3
+2025-04-08 11:08:44,760 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/FUp0Se194MzOSQ6jeDHRxhBPblzGTjKV0.mp3
+2025-04-08 11:08:44,761 - INFO - Processando palavra-chave: Governador, Governo e Relações Institucionais
+2025-04-08 11:08:44,761 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:44,761 - INFO - Link web imagem encontrado para Governador, Governo e Relações Institucionais: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011785/103011785_site.jpg
+2025-04-08 11:08:44,761 - INFO - Link web texto encontrado para Governador, Governo e Relações Institucionais: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:44,761 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103011785/103011785_site.jpg
+2025-04-08 11:08:45,177 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:45,178 - INFO - Tipo de mídia detectado para Governador, Governo e Relações Institucionais: Portal
+2025-04-08 11:08:45,178 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,178 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,178 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,178 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,427 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:45,429 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:45,430 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:45,430 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:45,430 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:45,430 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,431 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,697 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:45,699 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0.mp4
+2025-04-08 11:08:45,700 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0.mp4
+2025-04-08 11:08:45,700 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,700 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0
+2025-04-08 11:08:45,972 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:45,974 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0.mp3
+2025-04-08 11:08:45,975 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/FUp0Se194Mzpp0Pmnaf_8BBPblzGTjKV0.mp3
+2025-04-08 11:08:45,975 - INFO - Processando palavra-chave: Administração Penitenciária, Estado de São Paulo, Segurança Pública
+2025-04-08 11:08:45,975 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:45,976 - INFO - Link web imagem encontrado para Administração Penitenciária, Estado de São Paulo, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103022032/103022032_site.jpg
+2025-04-08 11:08:45,976 - INFO - Link web texto encontrado para Administração Penitenciária, Estado de São Paulo, Segurança Pública: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:45,976 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103022032/103022032_site.jpg
+2025-04-08 11:08:46,479 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:46,479 - INFO - Tipo de mídia detectado para Administração Penitenciária, Estado de São Paulo, Segurança Pública: Portal
+2025-04-08 11:08:46,479 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:46,480 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:46,480 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:46,480 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:46,868 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:46,870 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:46,870 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:46,870 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:46,870 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:46,871 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:46,871 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:47,104 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:47,107 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0.mp4
+2025-04-08 11:08:47,107 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0.mp4
+2025-04-08 11:08:47,107 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:47,107 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0
+2025-04-08 11:08:47,361 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:47,363 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0.mp3
+2025-04-08 11:08:47,363 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOfPhE0Ba-bvBxBPblzGTjKV0.mp3
+2025-04-08 11:08:47,364 - INFO - Processando palavra-chave: Ciência, Tecnologia e Inovação, Estado de São Paulo, Gestão e Governo Digital
+2025-04-08 11:08:47,364 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:47,364 - INFO - Link web imagem encontrado para Ciência, Tecnologia e Inovação, Estado de São Paulo, Gestão e Governo Digital: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103022143/103022143_site.jpg
+2025-04-08 11:08:47,364 - INFO - Link web texto encontrado para Ciência, Tecnologia e Inovação, Estado de São Paulo, Gestão e Governo Digital: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:47,365 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103022143/103022143_site.jpg
+2025-04-08 11:08:47,787 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:47,788 - INFO - Tipo de mídia detectado para Ciência, Tecnologia e Inovação, Estado de São Paulo, Gestão e Governo Digital: Portal
+2025-04-08 11:08:47,788 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:47,789 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:47,789 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:47,789 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:48,044 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:48,046 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:48,046 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:48,046 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:48,047 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:48,047 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:48,047 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:48,292 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:48,294 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0.mp4
+2025-04-08 11:08:48,295 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0.mp4
+2025-04-08 11:08:48,295 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:48,295 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0
+2025-04-08 11:08:48,515 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:48,517 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0.mp3
+2025-04-08 11:08:48,518 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/X7RGxRWbpOefqDXcCUMOvRBPblzGTjKV0.mp3
+2025-04-08 11:08:48,519 - INFO - Processando palavra-chave: Estado de São Paulo, Governo e Relações Institucionais, Secretaria da Fazenda e Planejamento
+2025-04-08 11:08:48,519 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:48,519 - INFO - Link web imagem encontrado para Estado de São Paulo, Governo e Relações Institucionais, Secretaria da Fazenda e Planejamento: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103029045/103029045_site.jpg
+2025-04-08 11:08:48,519 - INFO - Link web texto encontrado para Estado de São Paulo, Governo e Relações Institucionais, Secretaria da Fazenda e Planejamento: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:48,519 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103029045/103029045_site.jpg
+2025-04-08 11:08:48,997 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:48,997 - INFO - Tipo de mídia detectado para Estado de São Paulo, Governo e Relações Institucionais, Secretaria da Fazenda e Planejamento: Portal
+2025-04-08 11:08:48,997 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:48,997 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:48,998 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:48,998 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:49,242 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:49,244 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:49,244 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:49,244 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:49,244 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:49,245 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:49,245 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:49,501 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:49,504 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0.mp4
+2025-04-08 11:08:49,504 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0.mp4
+2025-04-08 11:08:49,504 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:49,504 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0
+2025-04-08 11:08:49,728 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:49,730 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0.mp3
+2025-04-08 11:08:49,730 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/VJCXhTvCsFKx1zxd8bv8-BBPblzGTjKV0.mp3
+2025-04-08 11:08:49,731 - INFO - Processando palavra-chave: Casa Civil, Educação, Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador
+2025-04-08 11:08:49,731 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:49,731 - INFO - Link web imagem encontrado para Casa Civil, Educação, Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/07/103202772/v1.5_103202772_e23d972b.png
+2025-04-08 11:08:49,731 - INFO - Link web texto encontrado para Casa Civil, Educação, Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:49,731 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/07/103202772/v1.5_103202772_e23d972b.png
+2025-04-08 11:08:50,237 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:50,238 - INFO - Tipo de mídia detectado para Casa Civil, Educação, Estado de São Paulo, Meio Ambiente, Infraestrutura e Logística, Parcerias em Investimentos, Vice-Governador: Portal
+2025-04-08 11:08:50,238 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,238 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,239 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,239 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,464 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:50,466 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:50,466 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:50,466 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:50,466 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:50,467 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,467 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,701 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:50,703 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0.mp4
+2025-04-08 11:08:50,703 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0.mp4
+2025-04-08 11:08:50,704 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,704 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0
+2025-04-08 11:08:50,928 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:50,930 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0.mp3
+2025-04-08 11:08:50,931 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/FizQaLJSNT7tPdNT3E2VZhBPblzGTjKV0.mp3
+2025-04-08 11:08:50,931 - INFO - Processando palavra-chave: Cultura, Economia e Indústria Criativas, Saúde, Segurança Pública
+2025-04-08 11:08:50,931 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:50,932 - INFO - Link web imagem encontrado para Cultura, Economia e Indústria Criativas, Saúde, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103008086/103008086_site.jpg
+2025-04-08 11:08:50,932 - INFO - Link web texto encontrado para Cultura, Economia e Indústria Criativas, Saúde, Segurança Pública: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:50,932 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103008086/103008086_site.jpg
+2025-04-08 11:08:51,153 - INFO - Tipo de mídia padrão: Portal
+2025-04-08 11:08:51,154 - INFO - Tipo de mídia detectado para Cultura, Economia e Indústria Criativas, Saúde, Segurança Pública: Portal
+2025-04-08 11:08:51,154 - INFO - Usando link web texto como base: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,154 - INFO - Usando link web texto diretamente para Portal: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,154 - INFO - Buscando mídia para: Impresso na URL: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,155 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,372 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Impresso
+2025-04-08 11:08:51,375 - INFO - Encontrada imagem JPG/JPEG/PNG: /img/monitoring-braspub.png
+2025-04-08 11:08:51,376 - INFO - Encontrada imagem JPG/JPEG/PNG: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/empresa/3576/banner/3576_Banner20250121.png
+2025-04-08 11:08:51,376 - INFO - Retornando link de imagem: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:51,376 - INFO - Usando link processado para Impresso: http://news.braspub-monitoring.com.br/img/monitoring-braspub.png
+2025-04-08 11:08:51,377 - INFO - Buscando mídia para: TV na URL: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,377 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,602 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: TV
+2025-04-08 11:08:51,604 - WARNING - Nenhum vídeo encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0.mp4
+2025-04-08 11:08:51,605 - INFO - Usando link processado para TV: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0.mp4
+2025-04-08 11:08:51,605 - INFO - Buscando mídia para: Rádio na URL: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,605 - INFO - Fazendo requisição para: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0
+2025-04-08 11:08:51,821 - INFO - Página acessada com sucesso. Analisando HTML para o tipo: Rádio
+2025-04-08 11:08:51,823 - WARNING - Nenhum áudio encontrado. Usando URL padrão: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0.mp3
+2025-04-08 11:08:51,824 - INFO - Usando link processado para Rádio: http://news.braspub-monitoring.com.br/n/9PaCzNobdoHM4C96YDAqoRBPblzGTjKV0.mp3
+2025-04-08 11:08:51,824 - INFO - Processando palavra-chave: Administração Penitenciária, Justiça e Cidadania, Segurança Pública
+2025-04-08 11:08:51,825 - INFO - Colunas para esta palavra: ['PALAVRAS-CHAVE', 'DATA DE CADASTRO', 'TÍTULO DA MATÉRIA', 'TIPO DE MÍDIA', 'LINK ORIGINAL', 'LINK_WEB_IMAGEM', 'LINK_WEB_TEXTO', 'LINK DA MATÉRIA CADASTRADA']
+2025-04-08 11:08:51,825 - INFO - Link web imagem encontrado para Administração Penitenciária, Justiça e Cidadania, Segurança Pública: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103019088/103019088.mp4
+2025-04-08 11:08:51,825 - INFO - Link web texto encontrado para Administração Penitenciária, Justiça e Cidadania, Segurança Pública: http://news.braspub-monitoring.com.br/n/qdGAUS1vSechzb5U7BvqyxBPblzGTjKV0
+2025-04-08 11:08:51,825 - INFO - Detectando tipo de mídia na URL: https://s3-sa-east-1.amazonaws.com/multclipp/arquivos/noticias/2025/04/02/103019088/103019088.mp4
